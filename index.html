@@ -1,70 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name Here</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joseph Maslanka's developer portfolio, featuring web applications and software engineering projects.">
+    <title>Joseph Maslanka | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="wordmark" href="#about">Joseph Maslanka</a>
+            <nav aria-label="Main navigation">
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-  <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <main class="container">
+        <section id="about" class="hero">
+            <h1>Joseph<br>Maslanka.</h1>
+            <p>I’m a computer science student at the University of Pittsburgh with a minor in information science. I enjoy building web applications that solve practical problems, and I’m interested in cybersecurity and how reliable software is built and deployed.</p>
+            <a class="button" href="#projects">View projects</a>
+        </section>
 
-  <main>
+        <section id="projects" class="portfolio-section" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <ul class="project-grid">
+                <li>
+                    <article class="project project-card">
+                        <h3>Estate Sale SMS Alerts</h3>
+                        <p>I built a Flask application that lets shoppers opt in to text alerts for an estate sale business. It uses Twilio for SMS and SQLite to manage subscribers.</p>
+                        <ul class="tags" aria-label="Technologies used">
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>Twilio</li>
+                            <li>SQLite</li>
+                        </ul>
+                    </article>
+                </li>
+                <li>
+                    <article class="project project-card">
+                        <h3>CampuStudy</h3>
+                        <p>I worked on a team project designed to help college students find study groups. We used GitHub issues, feature branches, and pull requests to coordinate development.</p>
+                        <ul class="tags" aria-label="Project practices">
+                            <li>GitHub</li>
+                            <li>Scrum</li>
+                            <li>Code review</li>
+                        </ul>
+                    </article>
+                </li>
+            </ul>
+        </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <!-- TODO: Replace with 2-3 sentences about yourself -->
-      <!-- e.g., include your name, your program/year, and what you are interested in -->
-    </section>
+        <section id="skills" class="portfolio-section" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul class="tags skill-list">
+                <li>Java</li>
+                <li>Python</li>
+                <li>HTML and CSS</li>
+                <li>Git and GitHub</li>
+                <li>SQL</li>
+            </ul>
+        </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <!-- Example project entry structure: copy, fill in, and add at least 2:
-      <div class="project">
-        <h3>Project Name</h3>
-        <p>What the project does, the technologies used, and what you learned.</p>
-      </div>
-      -->
-
-      <!-- TODO: Add at least 2 project entries using the structure above -->
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <!-- Example skill - TODO: replace -->
-        <li>HTML</li>
-
-        <!-- TODO: Add a second skill here -->
-        <!-- TODO: Add a third skill here -->
-        <!-- TODO: ... -->
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <!-- TODO: Replace href="#" with a real link (e.g., mailto:you@example.com or your LinkedIn URL) -->
-      <!-- TODO: Replace the link text with something descriptive, e.g. "Email me" or "LinkedIn" -->
-      <p><a href="#">Contact me</a></p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>&copy; Your Name Here</p>
-  </footer>
-
+        <section id="contact" class="portfolio-section" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <a class="contact-link" href="https://github.com/joey52103">Find me on GitHub</a>
+        </section>
+    </main>
 </body>
-
 </html>
